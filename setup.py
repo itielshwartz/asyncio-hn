@@ -4,7 +4,6 @@ import os
 
 from setuptools import setup
 
-
 with open("README") as f:
     readme = f.read()
 
@@ -21,7 +20,7 @@ setup(
     long_description=readme + '\n',
     author="Itiel Shwartz",
     author_email='itiel@etlsh.com',
-    url='https://github.com/itielshwartz/asyncio_hn',
+    url='https://github.com/itielshwartz/asyncio-hn',
     packages=[
         'asyncio_hn',
     ],
