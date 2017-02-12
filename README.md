@@ -6,6 +6,8 @@ with speed and ease.
 
 The package supports all endpoints of the official API :  [hacker-news API](https://github.com/HackerNews/API)
 
+Little bit about the develop proccess: [Using asyncio to download hackernews](http://etlsh.com/2017/01/21/using-asyncio-to-download-hacker-news/)
+
 
 ## Installation
 
