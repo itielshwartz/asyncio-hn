@@ -1,5 +1,5 @@
 # asyncio-hn
-.. |Python35| image:: https://img.shields.io/badge/python-3.5-blue.svg
+![python-3.6](https://img.shields.io/badge/python-3.6-blue.svg)
 
 A simple asyncio wrapper to download
  [hacker-news](https://news.ycombinator.com/)
