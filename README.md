@@ -42,6 +42,7 @@ if __name__ == '__main__':
 Using this config you can reach 1000+ request/sec.
 
 ```python
+import aiohttp
 N = 1_000_000
 
 async def advance_run(loop):
