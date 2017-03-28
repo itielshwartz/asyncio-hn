@@ -1,2 +1,2 @@
 tqdm
-aiohttp
+aiohttp==2.0.4
