@@ -4,7 +4,7 @@ import logging
 
 import aiohttp
 import tqdm
-from aiohttp import HttpProcessingError
+from aiohttp.http_exceptions import HttpProcessingError
 
 URL_GET_POST = "https://hacker-news.firebaseio.com/v0/item/{}.json"
 URL_GET_USER = "https://hacker-news.firebaseio.com/v0/user/{}.json"
