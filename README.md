@@ -1,10 +1,13 @@
 # asyncio-hn
+![python-3.6](https://img.shields.io/badge/python-3.6-blue.svg)
 
 A simple asyncio wrapper to download
  [hacker-news](https://news.ycombinator.com/)
 with speed and ease.
 
 The package supports all endpoints of the official API :  [hacker-news API](https://github.com/HackerNews/API)
+
+Develop proccess: [Using asyncio to download hackernews](http://etlsh.com/2017/01/21/using-asyncio-to-download-hacker-news/)
 
 
 ## Installation
@@ -39,6 +42,7 @@ if __name__ == '__main__':
 Using this config you can reach 1000+ request/sec.
 
 ```python
+import aiohttp
 N = 1_000_000
 
 async def advance_run(loop):

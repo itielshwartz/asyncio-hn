@@ -43,7 +43,9 @@ Advance usage
 Using this config you can reach 1000+ request/sec.
 
 .. code:: python
-
+    import aiohttp
+    from asyncio_hn import ClientHN
+    
     N = 1_000_000
 
     async def advance_run(loop):
