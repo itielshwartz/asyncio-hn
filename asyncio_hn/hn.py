@@ -4,7 +4,7 @@ import logging
 
 import aiohttp
 import tqdm
-from aiohttp.http_exceptions import HttpProcessingError
+from aiohttp import HttpProcessingError
 
 URL_GET_POST = "https://hacker-news.firebaseio.com/v0/item/{}.json"
 URL_GET_USER = "https://hacker-news.firebaseio.com/v0/user/{}.json"
@@ -38,7 +38,7 @@ class ClientHN(aiohttp.ClientSession):
 
     async def single_download(self, url):
         async with self.get(url) as resp:
-            return await resp.json(content_type=None)
+            return await resp.json()
 
     async def multi_download(self, itr, url, num_of_consumers=None, desc=""):
         queue, dlq, responses = asyncio.Queue(
@@ -73,7 +73,7 @@ class ClientHN(aiohttp.ClientSession):
                 async with self.get(url, timeout=10) as response:
                     resp = response
                     resp.raise_for_status()
-                    responses.append(await resp.json(content_type=None))
+                    responses.append(await resp.json())
                     # Notify the queue that the item has been processed
                     main_queue.task_done()
 
