@@ -15,7 +15,7 @@ with open(os.path.join(os.path.dirname(__file__), 'test_requirements.txt')) as f
 
 setup(
     name='asyncio_hn',
-    version='0.2.0',
+    version='0.3.0',
     description=" Simple asyncio wrapper to download hackernews",
     long_description=readme + '\n',
     author="Itiel Shwartz",
